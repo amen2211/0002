@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="titles.success">Order Confirmation - SOUK EL BARAKA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600&family=Amiri&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Souk El Baraka</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" data-i18n="nav.categories">Catégories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="spices.html" data-i18n="categories.spices">Épices</a></li>
+                        <li><a href="herbs.html" data-i18n="categories.herbs">Herbes</a></li>
+                        <li><a href="mixes.html" data-i18n="categories.mixes">Mélanges traditionnels</a></li>
+                        <li><a href="honey.html" data-i18n="categories.honey">Miel naturel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-i18n="nav.bestsellers">Best Sellers</a></li>
+                <li><a href="#" data-i18n="nav.about">About</a></li>
+                <li><a href="#" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart-login">
+            <input type="search" placeholder="Rechercher des épices..." disabled>
+            <div class="icons">
+                <a href="cart.html" class="icon">🛒<span id="cartCounterSuccess">0</span></a>
+                <span class="icon">👤</span>
+                <span class="language-switcher">FR | AR</span>
+            </div>
+        </div>
+    </header>
+    <main class="success-page">
+        <h1 data-i18n="success.title">Commande confirmée</h1>
+        <div id="orderInfo">
+            <!-- filled via JS -->
+        </div>
+        <p data-i18n="success.message">Your order has been successfully confirmed. Our team will contact you soon.</p>
+    </main>
+    <footer>
+        <div class="footer-sections">
+            <div class="footer-about">
+                <h3 data-i18n="footer.about">About the shop</h3>
+                <p data-i18n="footer.aboutText">Souk El Baraka is your destination for premium Tunisian spices and traditional natural products.</p>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18n="footer.quick">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+                    <li><a href="#" data-i18n="nav.contact">Contact</a></li>
+                    <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-service">
+                <h3 data-i18n="footer.service">Customer Service</h3>
+                <ul>
+                    <li><a href="#" data-i18n="footer.delivery">Delivery information</a></li>
+                    <li><a href="#" data-i18n="footer.returns">Returns policy</a></li>
+                    <li><a href="#" data-i18n="footer.privacy">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="footer.contact">Contact</h3>
+                <p data-i18n="footer.phone">Phone: +216 79 727 323</p>
+                <p data-i18n="footer.email">Email: contact@soukelbaraka.tn</p>
+                <p data-i18n="footer.address">Address: Tunis, Tunisia</p>
+                <div class="social-icons">
+                    <span>📘</span>
+                    <span>📸</span>
+                    <span>💬</span>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3 data-i18n="footer.newsletter">Newsletter</h3>
+                <input type="email" placeholder="Email address" data-i18n-placeholder="footer.emailPlaceholder"><button data-i18n="footer.subscribe">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom" data-i18n="footer.copyright">© Souk El Baraka – Tunisian Spices Store</div>
+    </footer>
+</body>
+</html>

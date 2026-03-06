@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUK EL BARAKA – Premium Tunisian Spices</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600&family=Amiri&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Promotional bar -->
+    <div class="promo-bar" data-i18n="promo">Free delivery in Tunisia for orders above 100 TND</div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Souk El Baraka</div>
+        <div class="burger">&#9776;</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" data-i18n="nav.categories">Catégories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="spices.html" data-i18n="categories.spices">Épices</a></li>
+                        <li><a href="herbs.html" data-i18n="categories.herbs">Herbes</a></li>
+                        <li><a href="mixes.html" data-i18n="categories.mixes">Mélanges traditionnels</a></li>
+                        <li><a href="honey.html" data-i18n="categories.honey">Miel naturel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-i18n="nav.bestsellers">Best Sellers</a></li>
+                <li><a href="#" data-i18n="nav.about">About</a></li>
+                <li><a href="#" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart-login">
+            <input type="search" id="searchInput" placeholder="Rechercher des épices..." data-i18n-placeholder="search">
+            <div class="icons">
+                <a href="cart.html" id="cartIcon" class="icon">🛒<span id="cartCounter">0</span></a>
+                <span class="icon">👤</span>
+                <span class="language-switcher">FR | AR</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Authentic Tunisian Spices Delivered to Your Door</h1>
+                <div class="hero-buttons">
+                    <a href="shop.html" class="btn" data-i18n="hero.shop">Shop Now</a>
+                    <a href="#categories" class="btn" data-i18n="hero.explore">Explorer les catégories</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 data-i18n="featured.title">Featured Products</h2>
+            <div class="product-grid" id="featuredGrid">
+                <!-- Product cards populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 data-i18n="categories.title">Categories</h2>
+            <div class="category-grid">
+                <a href="spices.html" class="category-card" data-i18n="categories.spices">Épices</a>
+                <a href="herbs.html" class="category-card" data-i18n="categories.herbs">Herbes</a>
+                <a href="mixes.html" class="category-card" data-i18n="categories.mixes">Mélanges traditionnels</a>
+                <a href="honey.html" class="category-card" data-i18n="categories.honey">Miel naturel</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2 data-i18n="why.title">Why Choose Us</h2>
+            <div class="feature-grid">
+                <div class="feature-card" data-i18n="why.natural">100% Natural</div>
+                <div class="feature-card" data-i18n="why.traditional">Traditional Recipes</div>
+                <div class="feature-card" data-i18n="why.fast">Fast Delivery</div>
+                <div class="feature-card" data-i18n="why.premium">Premium Quality</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+        <div class="container">
+            <h2 data-i18n="reviews.title">Customer Reviews</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <p data-i18n="reviews.one">"Best spices I've ever bought!"</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review-card">
+                    <p data-i18n="reviews.two">"Amazing quality and fast delivery."</p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+                <div class="review-card">
+                    <p data-i18n="reviews.three">"Authentic taste, will order again."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-sections">
+            <div class="footer-about">
+                <h3 data-i18n="footer.about">About the shop</h3>
+                <p data-i18n="footer.aboutText">Souk El Baraka is your destination for premium Tunisian spices and traditional natural products.</p>
+            </div>
+            <div class="footer-links">
+                <h3 data-i18n="footer.quick">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+                    <li><a href="#" data-i18n="nav.contact">Contact</a></li>
+                    <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-service">
+                <h3 data-i18n="footer.service">Customer Service</h3>
+                <ul>
+                    <li><a href="#" data-i18n="footer.delivery">Delivery information</a></li>
+                    <li><a href="#" data-i18n="footer.returns">Returns policy</a></li>
+                    <li><a href="#" data-i18n="footer.privacy">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="footer.contact">Contact</h3>
+                <p data-i18n="footer.phone">Phone: +216 79 727 323</p>
+                <p data-i18n="footer.email">Email: contact@soukelbaraka.tn</p>
+                <p data-i18n="footer.address">Address: Tunis, Tunisia</p>
+                <div class="social-icons">
+                    <span>📘</span>
+                    <span>📸</span>
+                    <span>💬</span>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3 data-i18n="footer.newsletter">Newsletter</h3>
+                <input type="email" placeholder="Email address" data-i18n-placeholder="footer.emailPlaceholder"><button data-i18n="footer.subscribe">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom" data-i18n="footer.copyright">© Souk El Baraka – Tunisian Spices Store</div>
+    </footer>
+</body>
+</html>
